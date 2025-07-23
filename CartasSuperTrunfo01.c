@@ -4,13 +4,13 @@ int main(){
     //Declarando variaveis da primeira carta.  
     char estado,codigo[50];
     char nome[50];
-    int população, pontos;
+    int populacao, pontos;
     float area, PIB;
 
     //Declarando variaveis da segunda carta.  
     char estado2,codigo2[50];
     char nome2[50];
-    int população2, pontos2;
+    int populacao2, pontos2;
     float area2, PIB2;
 
      //Entrada de dados com a interação com usuario Carta01.
@@ -24,8 +24,8 @@ int main(){
      printf("Digite o nome de sua cidade escolhida: \n");
      scanf("%s", nome);
 
-     printf("Digite sua população: \n");
-     scanf("%d", &população);
+     printf("Digite sua populacao: \n");
+     scanf("%d", &populacao);
 
      printf("Digite sua area KM²: \n");
      scanf("%f", &area);
@@ -47,8 +47,8 @@ int main(){
      printf("Digite o nome de sua cidade escolhida: \n");
      scanf("%s", nome2);
 
-     printf("Digite sua população: \n");
-     scanf("%d", &população2);
+     printf("Digite sua populacao: \n");
+     scanf("%d", &populacao2);
 
      printf("Digite sua area KM²: \n");
      scanf("%f", &area2);
@@ -64,19 +64,19 @@ int main(){
          printf("Estado: %c \n", estado);
          printf("Codigo: %s \n", codigo);
          printf("Nome: %s \n", nome);
-         printf("População: %d \n", população);
-         printf("Area: %f \n", area);
-         printf("PIB: %f \n", PIB);
-         printf("Pontos Turisticos: %d \n", pontos);
+         printf("Populacao: %d \n", populacao);
+         printf("Area: %.2f KM² \n", area);
+         printf("PIB: %.2f \n", PIB);
+         printf("Pontos Turisticos: %d \n\n", pontos);
          
         //Exibindo resultados Carta 02 (saida dos dados).
          printf("Carta 02: \n");
          printf("Estado: %c \n", estado2);
          printf("Codigo: %s \n", codigo2);
          printf("Nome: %s \n", nome2);
-         printf("População: %d \n", população2);
-         printf("Area: %f \n", area2);
-         printf("PIB: %f \n", PIB2);
+         printf("Populacao: %d \n", populacao2);
+         printf("Area: %.2f KM² \n", area2);
+         printf("PIB: %.2f \n", PIB2);
          printf("Pontos Turisticos: %d \n", pontos2);
 
 return 0;
