@@ -1,17 +1,18 @@
 #include <stdio.h>
 
-int main(){ 
-    //Declarando variaveis da primeira carta.  
-    char estado,codigo[50];
-    char nome[50];
-    int populacao, pontos;
-    float area, PIB;
+int main(){
+     
+ //Declarando variaveis da primeira carta.  
+ char estado,codigo[50];
+ char nome[50];
+ int populacao, pontos;
+ float area, PIB;
 
-    //Declarando variaveis da segunda carta.  
-    char estado2,codigo2[50];
-    char nome2[50];
-    int populacao2, pontos2;
-    float area2, PIB2;
+ //Declarando variaveis da segunda carta.  
+ char estado2,codigo2[50];
+ char nome2[50];
+ int populacao2, pontos2;
+ float area2, PIB2;
 
      //Entrada de dados com a interação com usuario Carta01.
      printf("Carta 01: \n");
@@ -22,7 +23,7 @@ int main(){
      scanf("%s", codigo);
 
      printf("Digite o nome de sua cidade escolhida: \n");
-     scanf("%s", nome);
+     scanf(" %49[^]", nome);
 
      printf("Digite sua populacao: \n");
      scanf("%d", &populacao);
@@ -45,7 +46,7 @@ int main(){
      scanf("%s", codigo2);
 
      printf("Digite o nome de sua cidade escolhida: \n");
-     scanf("%s", nome2);
+     scanf(" %49[^]", nome2);
 
      printf("Digite sua populacao: \n");
      scanf("%d", &populacao2);
@@ -65,8 +66,8 @@ int main(){
          printf("Codigo: %s \n", codigo);
          printf("Nome: %s \n", nome);
          printf("Populacao: %d \n", populacao);
-         printf("Area: %.2f KM² \n", area);
-         printf("PIB: %.2f \n", PIB);
+         printf("Area: %.6f KM² \n", area);
+         printf("PIB: %.5f \n", PIB);
          printf("Pontos Turisticos: %d \n\n", pontos);
          
         //Exibindo resultados Carta 02 (saida dos dados).
@@ -75,8 +76,8 @@ int main(){
          printf("Codigo: %s \n", codigo2);
          printf("Nome: %s \n", nome2);
          printf("Populacao: %d \n", populacao2);
-         printf("Area: %.2f KM² \n", area2);
-         printf("PIB: %.2f \n", PIB2);
+         printf("Area: %.6f KM² \n", area2);
+         printf("PIB: %.5f \n", PIB2);
          printf("Pontos Turisticos: %d \n", pontos2);
 
 return 0;
