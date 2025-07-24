@@ -5,13 +5,13 @@ int main(){
  //Declarando variaveis da primeira carta.  
  char estado,codigo[50];
  char nome[50];
- int populacao, pontos;
+ int populacao, pontosturisticos;
  float area, PIB;
 
  //Declarando variaveis da segunda carta.  
  char estado2,codigo2[50];
  char nome2[50];
- int populacao2, pontos2;
+ int populacao2, pontosturisticos2;
  float area2, PIB2;
 
      //Entrada de dados com a interação com usuario Carta01.
@@ -23,7 +23,7 @@ int main(){
      scanf("%s", codigo);
 
      printf("Digite o nome de sua cidade escolhida: \n");
-     scanf(" %49[^]", nome);
+     scanf(" %49[^\n]", nome);
 
      printf("Digite sua populacao: \n");
      scanf("%d", &populacao);
@@ -34,8 +34,8 @@ int main(){
      printf("Digite seu PIB: \n");
      scanf("%f", &PIB);
 
-     printf("Digite sua quantidade de pontos turisticos: \n");
-     scanf("%d", &pontos);
+     printf("Digite sua quantidade de pontos turisticos:   \n");
+     scanf("%d", &pontosturisticos);
 
      //Entrada de dados com a interação com usuario Carta02.
      printf("Carta 02: \n");
@@ -46,7 +46,7 @@ int main(){
      scanf("%s", codigo2);
 
      printf("Digite o nome de sua cidade escolhida: \n");
-     scanf(" %49[^]", nome2);
+     scanf(" %49[^\n]", nome2);
 
      printf("Digite sua populacao: \n");
      scanf("%d", &populacao2);
@@ -57,28 +57,28 @@ int main(){
      printf("Digite seu PIB: \n");
      scanf("%f", &PIB2);
 
-     printf("Digite sua quantidade de pontos turisticos: \n");
-     scanf("%d", &pontos2);
+     printf("Digite sua quantidade de pontos turisticos:   \n");
+     scanf("%d", &pontosturisticos2);
 
         //Exibindo resultados Carta 01 (saida dos dados).
          printf("Carta 01: \n");
          printf("Estado: %c \n", estado);
          printf("Codigo: %s \n", codigo);
-         printf("Nome: %s \n", nome);
+         printf("Nome da Cidade: %s \n", nome);
          printf("Populacao: %d \n", populacao);
-         printf("Area: %.6f KM² \n", area);
-         printf("PIB: %.5f \n", PIB);
-         printf("Pontos Turisticos: %d \n\n", pontos);
+         printf("Area: %.2f KM² \n", area);
+         printf("PIB: %.2f \n", PIB);
+         printf("Número de Pontos Turísticos: %d \n\n", pontosturisticos);
          
         //Exibindo resultados Carta 02 (saida dos dados).
          printf("Carta 02: \n");
          printf("Estado: %c \n", estado2);
          printf("Codigo: %s \n", codigo2);
-         printf("Nome: %s \n", nome2);
+         printf("Nome da Cidade: %s \n", nome2);
          printf("Populacao: %d \n", populacao2);
-         printf("Area: %.6f KM² \n", area2);
-         printf("PIB: %.5f \n", PIB2);
-         printf("Pontos Turisticos: %d \n", pontos2);
+         printf("Area: %.2f KM² \n", area2);
+         printf("PIB: %.2f \n", PIB2);
+         printf("Número de Pontos Turísticos: %d \n", pontosturisticos2);
 
 return 0;
     }
