@@ -53,7 +53,7 @@ int main() {
 
      // Cálculos
      densidadepopulacional1 = (float)populacao1 / area1; //converter população que e int pra float.
-     pibpercapta1 = (pib1 * 1000000000.0f) / populacao1;
+     pibpercapta1 = (float)pib1 / populacao1;
      superpoder1 = (float)populacao1 + area1 + pib1 + pontosturisticos1 + pibpercapta1 + (1.0f / densidadepopulacional1);
  
     // Entrada de Dados - Carta 2
@@ -85,7 +85,7 @@ int main() {
 
      // Cálculos
      densidadepopulacional2 = (float)populacao2 / area2; //converter população que e int pra float.
-     pibpercapta2 = (pib2 * 1000000000.0f) / populacao2;
+     pibpercapta2 = (float)pib2 / populacao2;
      superpoder2 = (float)populacao2 + area2 + pib2 + pontosturisticos2 + pibpercapta2 + (1.0f / densidadepopulacional2);
 
          // Exibindo resultados - Carta 1
